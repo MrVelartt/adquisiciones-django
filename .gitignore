@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django migrations
+**/migrations/
+**/migrations/*.py
+**/migrations/*.pyc
+
+# SQLite database
+*.sqlite3
+db.sqlite3
+
+# Local environment variables
+.env
+*.env
+.env.*
+
+# VSCode settings
+.vscode/
+
+# IDEs
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# MacOS
+.DS_Store
+
+# Linux/Unix
+*.swp
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+
+# Media & static
+/media/
+staticfiles/
+static/
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+*.cover
+.cache
+nosetests.xml
+pytest_cache/
+
+# pip files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.ENV/
