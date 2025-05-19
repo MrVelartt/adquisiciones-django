@@ -1,8 +1,11 @@
+import reversion  
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
 from datetime import date
 
+
+@reversion.register()
 class Acquisition(models.Model):
     presupuesto = models.DecimalField("Presupuesto", max_digits=15, decimal_places=2, validators=[MinValueValidator(0)])
     unidad = models.CharField("Unidad administrativa", max_length=255)

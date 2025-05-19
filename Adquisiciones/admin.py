@@ -1,8 +1,9 @@
 from django.contrib import admin
+from reversion.admin import VersionAdmin
 from .models import Acquisition
 
 @admin.register(Acquisition)
-class AcquisitionAdmin(admin.ModelAdmin):
+class AcquisitionAdmin(VersionAdmin):
     list_display = (
         'id',
         'tipo_bien_servicio',
